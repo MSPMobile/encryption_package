@@ -1,0 +1,8 @@
+version: "Apple Swift version 5.7.2 (swiftlang-5.7.2.135.5 clang-1400.0.29.51)"
+options: "d3af0428658cf6127cdca9b33bdfcef985d9aa03def143556b19e94086b084ad"
+build_start_time: [1675675049, 767142057]
+build_end_time: [1675675049, 782498836]
+inputs:
+  "/Users/mspmobiledeveloper/Documents/Test Modules/sample_application/macos/Flutter/GeneratedPluginRegistrant.swift": !private [1675675040, 21648645]
+  "/Users/mspmobiledeveloper/Documents/Test Modules/sample_application/macos/Runner/AppDelegate.swift": !private [1656637104, 0]
+  "/Users/mspmobiledeveloper/Documents/Test Modules/sample_application/macos/Runner/MainFlutterWindow.swift": !private [1656637104, 0]
