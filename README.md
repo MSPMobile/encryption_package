@@ -1,16 +1,7 @@
-# sample_application
+# Encryption Module For MSP
 
-A new Flutter project.
+Encryption Flutter package using AES-GCM.
 
-## Getting Started
+MOSIP Standard Authentication using JWT.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+![2](https://user-images.githubusercontent.com/108213674/218018093-8a00e24b-a76c-4ff6-87df-bec50c260ef9.png)
