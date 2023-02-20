@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/src/widgets/container.dart';
 import 'package:flutter/src/widgets/framework.dart';
+import 'package:sample_application/Vanilla/aes_gcm.dart';
 import 'package:sample_application/globals/globals.dart';
 import 'package:sample_application/presentation/xor.dart';
 
@@ -64,6 +65,7 @@ class _xorState extends State<xor> {
                               AADString;
                               IVString;
                               isXorComplete = true;
+                              phase = "AES Encryption Step 2/4";
                             });
                           } catch (e) {
                             ScaffoldMessenger.of(context).showSnackBar(
@@ -89,7 +91,23 @@ class _xorState extends State<xor> {
                       child: ElevatedButton.icon(
                           style: ElevatedButton.styleFrom(
                               backgroundColor: SecondaryColorXor),
-                          onPressed: () {},
+                          onLongPress: () {
+                            Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                    builder: (context) => const aesEncrypt()));
+                          },
+                          onPressed: () {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                                const SnackBar(
+                                    duration: Duration(seconds: 5),
+                                    backgroundColor:
+                                        Color.fromARGB(255, 176, 53, 12),
+                                    content: Text(
+                                      'On Progress. Please wait',
+                                      style: TextStyle(color: Colors.white),
+                                    )));
+                          },
                           icon: const Icon(Icons.arrow_right_alt),
                           label: Container(
                               height: MediaQuery.of(context).size.height / 15,

@@ -59,7 +59,7 @@ class _logicalOperationState extends State<logicalOperation> {
                           onPressed: () {
                             try {
                               xorOperation(
-                                  "2023-02-02T14:16:37.611Z", "8116431079");
+                                  "2023-02-07T08:17:23.697Z", "4560504288");
                               AAD = getRangeOfArr(XORBytes, 16, "AAD");
                               IV = getRangeOfArr(XORBytes, 12, "IV");
                               print(IV.toList().toString());
